@@ -1,0 +1,34 @@
+body{
+    background-color:antiquewhite;
+    font-size:x-large;
+    text-align: center;
+    color:aliceblue
+}
+
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+/* 3 rows
+header - top row, menu and content - 2nd row and footer - 3rd row */
+
+.header{
+    background-color:lightblue;
+    /* header spans over entire first row */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.menu{
+    background-color:plum;
+}
+.content{
+    background-color:orange;
+}
+.footer{
+    background-color :palevioletred;
+}
+
+
