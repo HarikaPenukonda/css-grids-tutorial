@@ -31,7 +31,8 @@ we use repeat(amount of row/cols, value(ht/wdt))
 */
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2 50px) ;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2 50px) ; */
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);
     grid-gap: 3px
 }
