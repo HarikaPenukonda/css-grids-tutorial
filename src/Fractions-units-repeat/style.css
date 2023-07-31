@@ -25,10 +25,13 @@ body{
 }
 
 /* all the columns grows in size as the container grows- fraction unit, 
-the grid splits the entire width into three fractions */
+the grid splits the entire width into three fractions 
+
+we use repeat(amount of row/cols, value(ht/wdt))
+*/
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 200px ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2 50px) ;
     grid-gap: 3px
 }
