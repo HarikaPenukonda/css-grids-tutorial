@@ -1,0 +1,36 @@
+body{
+    background-color:antiquewhite;
+    font-size:x-large;
+    text-align: center;
+    color:aliceblue
+}
+
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+    grid-template-areas: 
+        "m h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "m f f f f f f f f f f f";
+}
+
+.header{
+    background-color:lightblue;
+    grid-area: h;
+}
+.menu{
+    background-color:plum;
+    grid-area: m;
+}
+.content{
+    background-color:orange;
+    grid-area: c;
+}
+.footer{
+    background-color :palevioletred;
+    grid-area: f;
+}
+
+
