@@ -1,0 +1,52 @@
+body{
+    background-color: blanchedalmond;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    color: black
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 3px;
+}
+
+.box-1{
+    background-color: lightblue;
+    
+}
+.box-9{
+    background-color: lightblue;
+}
+.box-5{
+    background-color: lightblue;
+}
+.box-11{
+    background-color: lightcoral;
+}
+.box-3{
+    background-color: lightcoral;
+}
+.box-7{
+    background-color: lightcoral;
+}
+.box-2{
+    background-color: lightcyan;
+}
+.box-10{
+    background-color: lightcyan;
+}
+.box-6{
+    background-color: lightcyan;
+}
+.box-4{
+    background-color: lightgreen;
+}
+.box-8{
+    background-color: lightgreen;
+}
+.box-12{
+    background-color: lightgreen;
+}
