@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
     <title>CSS Grids</title>
 </head>
 <body>
@@ -19,6 +21,10 @@
             </div>
             <div class="chart-main">
                 <div>Chart</div>
+                <figure class="highcharts-figure">
+                    <div id="container"></div>
+                </figure>
+                
                 <div class="percent-data">
                     <h3>45%</h3>
                     <div>this month</div>
@@ -36,4 +42,30 @@
     </div>
     
 </body>
+<script>
+    Highcharts.chart('container', {
+    title: {
+        text:undefined,
+    },
+    chart: {
+        type: 'spline'
+    },
+    yAxis: {
+        title: {
+            text:undefined,
+        }
+    },
+    series: [{
+        data: [5.2, 5.7, 8.7, 13.9, 18.2, 21.4, 25.0, {
+            y: 26.4,
+        }, 22.8, 17.5, 12.1, 7.6]
+
+    }, {
+        data: [{
+            y: 1.5,
+        }, 1.6, 3.3, 5.9, 10.5, 13.5, 14.5, 14.4, 11.5, 8.7, 4.7, 2.6]
+    }]
+});
+
+</script>
 </html>

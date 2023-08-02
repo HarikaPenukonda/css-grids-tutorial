@@ -53,17 +53,10 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
-/* .box1{
-    grid-row: 1 / 4;
+/* highcharts css */
+.highcharts-figure,
+.highcharts-data-table table {
+    overflow: hidden;
+    width: 180px;
+    height: 100px;
 }
-.box2{
-    grid-column: 2 / 3;
-}
-.box4{
-    grid-column: 4 / 5;
-    grid-row: 1 / 4;
-}
-.box7{
-    grid-column: 2 / 4;
-    grid-row: 3 / 5;
-} */
