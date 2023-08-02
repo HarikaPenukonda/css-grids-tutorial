@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .box{
     background-color: lightblue;
     border: 1px solid lightblue;
     border-radius: 10px;
+    color: blue;
 }
 
 .main{
@@ -23,6 +29,29 @@
 .box7{
     grid-column: span 2;
     grid-row: span 2;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.chart-main{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.title-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.percent-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 /* .box1{
     grid-row: 1 / 4;
